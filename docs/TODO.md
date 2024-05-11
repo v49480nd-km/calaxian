@@ -1,0 +1,30 @@
+- Create screen
+- player class
+    - draw player
+    - control player
+    - player collision
+    - shoot bullet
+    - add 3 lives
+    - take lives away under collision
+    - scoring system
+    - store high score
+- enemy class
+    - draw enemy
+    - draw many enemies
+    - enemy collision
+    - have a formation of enemies that move across screen
+    - have a shoot function at random for enemies
+    - have certain enemies dive towards player
+    - if no enemies on screen, reset enemy formation
+    - assign points for certain enemies
+- maybe ui class
+    - draw current score
+    - draw high score
+    - draw player lives
+    - start screen
+    - pause menu
+- maybe bullet class
+    - draw bullet
+    - bullet collision
+    - bullet destroys enemy
+    - bullet takes life of player
