@@ -1,4 +1,5 @@
 #include <cmath>
+#include <cstdio>
 #include <cstdlib>
 #include <csignal>
 #include <ctime>
@@ -19,7 +20,7 @@ Player::Player()
     this->ypos      = 100;
     this->yvel      = 0;
 }
-
+/*
 char Player::getKeys(void)
 {
     // char key_pressed = getKey();
@@ -83,4 +84,4 @@ void Player::_move(void)
 {
     this->xpos += this->xvel;
     this->ypos += this->yvel;
-}
+} */

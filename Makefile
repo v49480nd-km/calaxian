@@ -1,6 +1,6 @@
-CC=clang++
+CC=g++
 CFLAGS=-std=c++17 -O3 -Werror -Wextra -Wall -Wfloat-equal -Wundef -Wshadow \
-	   -Wformat=2 -Wpedantic
+	   -Wformat=2 -Wpedantic -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 SRC=src
 OBJ=obj
 SRCS=$(wildcard $(SRC)/*.cpp)
