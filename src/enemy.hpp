@@ -1,3 +1,6 @@
+#ifndef __ENEMY_HPP__
+#define __ENEMY_HPP__
+
 enum EnemyType
 {
     RED,
@@ -12,3 +15,5 @@ class Enemy
         EnemyType type;
     private:
 };
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef __PLAYER_HPP__
+#define __PLAYER_HPP__
+
 #include <cstdbool>
 
 class Player
@@ -30,3 +33,5 @@ class Player
         void _setSuper(void);
         void _setVel(void);
 };
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef __BULLET_HPP__
+#define __BULLET_HPP__
+
 enum BulletType
 {
     ENEMY,
@@ -11,3 +14,5 @@ typedef struct
         ypos,
         yvel;
 } Bullet;
+
+#endif
