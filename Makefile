@@ -9,6 +9,9 @@ BIN=bin/calaxian
 
 all: $(BIN)
 
+run:
+	./$(BIN)
+
 $(OBJ)/%.o: $(SRC)/%.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
 

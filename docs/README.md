@@ -7,9 +7,12 @@ to hate it lol.
 
 ## Installation
 **NOTICE: NOT FINISHED**
+```bash
 git clone https://github.com/v49480nd-km/calaxian.git
 cd calaxian
 make
+make run
+```
 
 ## Contributions
 No
