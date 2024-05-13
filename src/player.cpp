@@ -21,13 +21,15 @@ Player::Player()
     this->yvel      = 0;
 }
 /*
-char Player::getKeys(void)
+char
+Player::getKeys(void)
 {
     // char key_pressed = getKey();
     // return key_pressed;
 }
 
-void Player::bulletCollide(Bullet& bullet)
+void
+Player::bulletCollide(Bullet& bullet)
 {
     int dist = sqrt((pow((bullet.xpos - this->xpos), 2)) +
             (pow((bullet.ypos - this->xpos), 2)));
@@ -36,19 +38,22 @@ void Player::bulletCollide(Bullet& bullet)
         this->lives--;
 }
 
-void Player::drawPlayer(void)
+void
+Player::drawPlayer(void)
 {
     // draw(this->xpos, this->ypos);
     // refresh();
 }
 
-void Player::percCollide()
+void
+Player::percCollide()
 {
     // see bullet collide
     // might have to make a perc struct||class
 }
 
-void Player::saveHighScore()
+void
+Player::saveHighScore()
 {
     FILE* score_file;
     int high_score;
@@ -60,8 +65,7 @@ void Player::saveHighScore()
 
     high_schore = fscanf(score_file, "%d", &high_score); 
 
-    if (this->score > high_score)
-    {
+    if (this->score > high_score) {
         freopen(score_file, "w");
         fprintf("%d", this->score);
     }
@@ -69,18 +73,18 @@ void Player::saveHighScore()
     fclose(score_file);
 }
 
-void Player::_fire(void)
+void
+Player::_fire(void)
 {
     if (this->is_firing)
         this->is_firing = false;
 
     if (!(this->is_firing))
-    {
         Bullet bullet = { PLAYER, this->xpos, this->ypos, 5, };
-    }
 }
 
-void Player::_move(void)
+void
+Player::_move(void)
 {
     this->xpos += this->xvel;
     this->ypos += this->yvel;
