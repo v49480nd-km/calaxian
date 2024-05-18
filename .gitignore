@@ -1,2 +1,3 @@
-bin/*
-obj/*
+build/CMakeFiles/
+build/_deps/
+build/calaxian
