@@ -1,23 +1,33 @@
 #include <cstdio>
 #include <raylib.h>
 
-int
-main(void)
-{
-    const int WIDTH = 800;
-    const int HEIGHT = 600;
+#include "player.hpp"
+#include "ui.hpp"
 
-    InitWindow(WIDTH, HEIGHT, "CALAXIAN");
-    SetTargetFPS(60);
+int main(void) {
+    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "CALAXIAN");
+    SetTargetFPS(FPS);
+    Player player;
 
     while (!WindowShouldClose()) {
         BeginDrawing();
             ClearBackground(RAYWHITE);
-            DrawText("CALAXIAN", 190, 200, 84, BLACK);
+            drawLives(player.lives);
+            drawScore(player.score);
+
+            if (IsKeyDown(KEY_A) && player.shipLeft.x >= 0) {
+                player.vel = -10;
+            } else if (IsKeyDown(KEY_D) && player.shipRight.x <= SCREEN_WIDTH) {
+                player.vel = 10;
+            } else {
+                player.vel = 0;
+            }
+
+            player.drawPlayer();
+            player.move();
         EndDrawing();
     }
 
     CloseWindow();
-
     return 0;
 }

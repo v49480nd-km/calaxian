@@ -1,12 +1,15 @@
 #ifndef __UI_HPP__
 #define __UI_HPP__
 
-#include "player.hpp"
+#include <raylib.h>
 
-void drawCurScore(Player* player);
-void drawHighScore(void);
-void drawLives(Player* player);
-void pauseMenu(Player* player);
-void startScreen(void);
+#define FONT "../data/fonts/Warzone.ttf"
+#define FPS 60
+#define PLAYER_COLOR ORANGE
+#define SCREEN_WIDTH GetScreenWidth()
+#define SCREEN_HEIGHT GetScreenHeight()
+
+void drawLives(int cur_lives);
+void drawScore(int cur_score);
 
 #endif
