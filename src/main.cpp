@@ -12,7 +12,8 @@ int main(void) {
     while (!WindowShouldClose()) {
         BeginDrawing();
             ClearBackground(RAYWHITE);
-            drawLives(3);
+            drawLives(player.lives);
+            drawScore(player.score);
 
             if (IsKeyDown(KEY_A) && player.shipLeft.x >= 0) {
                 player.vel = -10;

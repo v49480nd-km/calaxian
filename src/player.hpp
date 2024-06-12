@@ -9,7 +9,7 @@ public:
     bool is_firing,
          is_perced,
          is_super;
-    int lives, vel;
+    int lives, score, vel;
     Vector2 shipHead, shipLeft, shipRight;
     // FUNCTIONS
     Player();

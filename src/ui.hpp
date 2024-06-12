@@ -10,5 +10,6 @@
 #define SCREEN_HEIGHT GetScreenHeight()
 
 void drawLives(int cur_lives);
+void drawScore(int cur_score);
 
 #endif
