@@ -1,7 +1,7 @@
 #ifndef __PLAYER_HPP__
 #define __PLAYER_HPP__
 
-#include <cstdbool>
+#include <raylib.h>
 
 class Player {
 public:
@@ -9,25 +9,15 @@ public:
     bool is_firing,
          is_perced,
          is_super;
-    int lives,
-        perc_time,
-        score,
-        xpos,
-        xvel,
-        ypos,
-        yvel;
+    int lives, vel;
+    Vector2 shipHead, shipLeft, shipRight;
     // FUNCTIONS
     Player();
-    ~Player();
-
-    char getKeys(void);
-    void bulletCollide(Bullet* bullet);
     void drawPlayer(void);
-    void percCollide(void);
-    void saveHighScore(void);
+    void move(void);
+
 private:
     void _fire(void);
-    void _move(void);
     void _setPerc(void);
     void _setSuper(void);
     void _setVel(void);

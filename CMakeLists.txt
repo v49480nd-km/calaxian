@@ -21,6 +21,10 @@ FetchContent_MakeAvailable(raylib)
 
 set(SOURCE_FILES
     src/main.cpp
+    src/player.cpp
+    src/player.hpp
+    src/ui.cpp
+    src/ui.hpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
