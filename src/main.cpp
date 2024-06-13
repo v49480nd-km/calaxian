@@ -19,6 +19,8 @@ int main(void) {
                 player.vel = -10;
             } else if (IsKeyDown(KEY_D) && player.shipRight.x <= SCREEN_WIDTH) {
                 player.vel = 10;
+            } else if (IsKeyDown(KEY_SPACE)) {
+                player.is_firing = true;
             } else {
                 player.vel = 0;
             }
