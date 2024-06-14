@@ -20,6 +20,8 @@ set(BUILD_EXAMPLES OFF CACHE INTERNAL "")
 FetchContent_MakeAvailable(raylib)
 
 set(SOURCE_FILES
+    src/bullet.cpp
+    src/bullet.hpp
     src/main.cpp
     src/player.cpp
     src/player.hpp

@@ -14,10 +14,10 @@ public:
     // FUNCTIONS
     Player();
     void drawPlayer(void);
+    void fire(void);
     void move(void);
 
 private:
-    void _fire(void);
     void _setPerc(void);
     void _setSuper(void);
     void _setVel(void);

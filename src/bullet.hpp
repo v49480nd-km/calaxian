@@ -6,11 +6,13 @@ enum BulletType {
     PLAYER,
 };
 
-typedef struct {
+class Bullet {
+public:
     BulletType type;
-    int xpos,
-        ypos,
-        yvel;
-} Bullet;
+    int xpos, ypos, yvel;
+
+    Bullet(int xp, int yp, BulletType bt);
+    void drawBullet(void);
+};
 
 #endif

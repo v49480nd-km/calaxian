@@ -21,6 +21,8 @@ int main(void) {
                 player.vel = 10;
             } else if (IsKeyDown(KEY_SPACE)) {
                 player.is_firing = true;
+                player.fire();
+                player.is_firing = false;
             } else {
                 player.vel = 0;
             }
